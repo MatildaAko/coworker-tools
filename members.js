@@ -43,6 +43,6 @@ const members = [
     userSlack: "sallydoe",
     timeZone: "America/Los_Angeles",
   }
-];
+]; //members is an array of objects showing the member data
 
 module.exports = members;
