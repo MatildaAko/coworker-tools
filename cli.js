@@ -22,5 +22,11 @@ if (command === "list") {
 
 function runListCommand() {
   // Replace this with your implementation
-  console.log("Called the list command");
+  members.forEach(member => {//loops through each member in the members array
+    if (member.manager === null) {//this checks if the member has no manager then returns a message
+      console.log(`${member.firstName} ${member.lastName} is a ${member.jobTitle}, they have no manager.`);
+    } else { // returns a different message if the member has a manager
+      console.log(`${member.firstName} ${member.lastName} is a ${member.jobTitle}, their manager is ${member.manager}.`);
+    }
+  })
 }
